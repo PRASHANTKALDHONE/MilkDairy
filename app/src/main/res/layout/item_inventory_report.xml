@@ -1,0 +1,9 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:padding="8dp">
+    <TextView android:id="@+id/tvItem" android:layout_width="160dp" android:layout_height="wrap_content" android:textColor="?android:textColorPrimary"/>
+    <TextView android:id="@+id/tvCategory" android:layout_width="130dp" android:layout_height="wrap_content" android:textColor="?android:textColorPrimary"/>
+    <TextView android:id="@+id/tvStockIn" android:layout_width="100dp" android:layout_height="wrap_content" android:textColor="?android:textColorPrimary"/>
+    <TextView android:id="@+id/tvStockOut" android:layout_width="100dp" android:layout_height="wrap_content" android:textColor="?android:textColorPrimary"/>
+    <TextView android:id="@+id/tvCurrentStock" android:layout_width="130dp" android:layout_height="wrap_content" android:textColor="?android:textColorPrimary"/>
+    <TextView android:id="@+id/tvUnit" android:layout_width="80dp" android:layout_height="wrap_content" android:textColor="?android:textColorPrimary"/>
+    <TextView android:id="@+id/tvStockValue" android:layout_width="130dp" android:layout_height="wrap_content" android:textColor="?android:textColorPrimary"/>
+</LinearLayout>

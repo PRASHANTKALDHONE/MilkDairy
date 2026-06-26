@@ -1,0 +1,35 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="160dp" android:height="140dp" android:viewportWidth="160" android:viewportHeight="140">
+    <!--  ===== Milk Splash (white liquid base) =====  -->
+    <!--  Main splash pool  -->
+    <path android:fillColor="#FFFFFF" android:pathData="M30,115 C30,115 20,105 40,100 C55,96 75,102 90,100 C105,98 120,92 135,100 C148,107 140,120 120,118 C100,116 80,120 60,118 C45,116 30,120 30,115 Z"/>
+    <!--  Splash drops left  -->
+    <path android:fillColor="#FFFFFF" android:pathData="M38,100 C38,100 30,88 35,82 C38,78 45,83 42,92 Z"/>
+    <!--  Splash drops right  -->
+    <path android:fillColor="#FFFFFF" android:pathData="M118,98 C118,98 128,84 122,78 C118,74 112,80 116,90 Z"/>
+    <!--  Center splash pillar  -->
+    <path android:fillColor="#F0F8FF" android:pathData="M75,60 C72,60 68,75 68,90 C68,100 72,108 80,108 C88,108 92,100 92,90 C92,75 88,60 85,60 C82,58 78,58 75,60 Z"/>
+    <!--  Splash crown droplets  -->
+    <path android:fillColor="#FFFFFF" android:pathData="M60,80 C58,75 60,68 65,70 C68,72 66,80 63,82 Z"/>
+    <path android:fillColor="#FFFFFF" android:pathData="M95,78 C98,73 100,66 96,68 C93,70 94,78 97,80 Z"/>
+    <path android:fillColor="#FFFFFF" android:pathData="M50,92 C46,87 50,80 54,83 C57,86 54,95 52,96 Z"/>
+    <path android:fillColor="#FFFFFF" android:pathData="M106,90 C110,85 108,78 104,81 C101,84 103,93 105,94 Z"/>
+    <!--  ===== Metal Milk Jug (right side) =====  -->
+    <!--  Jug body  -->
+    <path android:fillColor="#D0D0D0" android:pathData="M100,20 L108,22 L115,30 L118,50 L116,90 L105,95 L95,95 L84,90 L82,50 L85,30 L92,22 Z"/>
+    <!--  Jug highlight (lighter left side)  -->
+    <path android:fillColor="#E8E8E8" android:pathData="M100,20 L92,22 L85,30 L82,50 L84,90 L95,95 L100,95 L100,20 Z"/>
+    <!--  Jug dark shading right  -->
+    <path android:fillColor="#BBBBBB" android:pathData="M108,22 L115,30 L118,50 L116,90 L105,95 L100,95 L100,20 Z"/>
+    <!--  Jug neck/shoulder band  -->
+    <path android:fillColor="#B0B0B0" android:pathData="M88,28 L112,28 L115,32 L85,32 Z"/>
+    <!--  Jug lid top  -->
+    <path android:fillColor="#A0A0A0" android:pathData="M90,18 Q100,14 110,18 L108,22 L92,22 Z"/>
+    <!--  Jug handle  -->
+    <path android:fillColor="#C0C0C0" android:strokeColor="#AAAAAA" android:strokeWidth="2" android:pathData="M118,45 C128,45 132,52 130,60 C128,68 118,70 116,65"/>
+    <!--  Blue bottle cap/lid on jug spout  -->
+    <path android:fillColor="#1565C0" android:pathData="M91,12 Q100,8 109,12 L110,18 Q100,15 90,18 Z"/>
+    <!--  Lid shine  -->
+    <path android:fillColor="#42A5F5" android:pathData="M93,13 Q98,10 103,13 L104,16 Q99,14 95,16 Z"/>
+    <!--  Jug seam line (metallic detail)  -->
+    <path android:strokeColor="#C8C8C8" android:strokeWidth="1" android:pathData="M100,20 L100,95"/>
+</vector>

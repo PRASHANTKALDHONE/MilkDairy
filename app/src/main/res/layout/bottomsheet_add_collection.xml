@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:background="?android:colorBackground"
+android:orientation="vertical">
+
+<!-- ================================================= -->
+<!-- TOP HEADER -->
+<!-- ================================================= -->
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:background="@drawable/side_nav_bar"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingHorizontal="18dp">
+
+    <!-- LEFT -->
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NEW ENTRY"
+            android:textColor="#CCFFFFFF"
+            android:textSize="9sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.08"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Add Milk Collection"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Daily milk collection management"
+            android:textColor="#D1FAE5"
+            android:textSize="10sp"/>
+
+    </LinearLayout>
+
+    <!-- CLOSE -->
+
+    <LinearLayout
+        android:id="@+id/btnCloseForm"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:background="@drawable/bg_glass_circle">
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/close"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+<!-- ================================================= -->
+<!-- SCROLL CONTENT -->
+<!-- ================================================= -->
+
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="14dp">
+
+        <!-- ================================================= -->
+        <!-- DATE + SHIFT -->
+        <!-- ================================================= -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- DATE -->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DATE"
+                    android:textColor="#98A2B3"
+                    android:textSize="8sp"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bg_edittext"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="12dp">
+
+                    <ImageView
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:src="@drawable/calendar"
+                        app:tint="#98A2B3"/>
+
+                    <EditText
+                        android:id="@+id/etDate"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="8dp"
+                        android:background="@android:color/transparent"
+                        android:focusable="false"
+                        android:hint="Select date"
+                        android:textColor="?android:textColorPrimary"
+                        android:textColorHint="#98A2B3"
+                        android:textSize="11sp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- SHIFT -->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SHIFT"
+                    android:textColor="#98A2B3"
+                    android:textSize="8sp"
+                    android:textStyle="bold"/>
+
+                <Spinner
+                    android:id="@+id/spShift"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bg_edittext"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- ================================================= -->
+        <!-- FARMER -->
+        <!-- ================================================= -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="FARMER"
+            android:textColor="#98A2B3"
+            android:textSize="8sp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_edittext"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="12dp">
+
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:src="@drawable/farmer"
+                app:tint="#98A2B3"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/etFarmer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:background="@android:color/transparent"
+                android:hint="Search farmer"
+                android:textColor="?android:textColorPrimary"
+                android:textColorHint="#98A2B3"
+                android:textSize="11sp"/>
+
+        </LinearLayout>
+
+        <!-- CODE -->
+
+        <EditText
+            android:id="@+id/etFarmerCode"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_edittext"
+            android:enabled="false"
+            android:hint="Farmer code"
+            android:paddingHorizontal="12dp"
+            android:textColor="?android:textColorPrimary"
+            android:textSize="11sp"/>
+
+        <!-- ================================================= -->
+        <!-- MILK TYPE -->
+        <!-- ================================================= -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="MILK TYPE"
+            android:textColor="#98A2B3"
+            android:textSize="8sp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/layoutCow"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Cow"
+                android:textAllCaps="false"
+                android:textColor="#10B981"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:backgroundTint="#ECFDF5"
+                app:cornerRadius="14dp"
+                app:elevation="0dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/layoutBuffalo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="6dp"
+                android:text="Buffalo"
+                android:textAllCaps="false"
+                android:textColor="#667085"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:backgroundTint="#F4F7FA"
+                app:cornerRadius="14dp"
+                app:elevation="0dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/layoutMix"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Mix"
+                android:textAllCaps="false"
+                android:textColor="#667085"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:backgroundTint="#F4F7FA"
+                app:cornerRadius="14dp"
+                app:elevation="0dp"/>
+
+        </LinearLayout>
+
+        <!-- ================================================= -->
+        <!-- LITER FAT SNF -->
+        <!-- ================================================= -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/etLiters"
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edittext"
+                android:hint="Liters"
+                android:inputType="numberDecimal"
+                android:paddingHorizontal="10dp"
+                android:textSize="11sp"/>
+
+            <EditText
+                android:id="@+id/etFat"
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="6dp"
+                android:background="@drawable/bg_edittext"
+                android:hint="Fat %"
+                android:inputType="numberDecimal"
+                android:paddingHorizontal="10dp"
+                android:textSize="11sp"/>
+
+            <EditText
+                android:id="@+id/etSnf"
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edittext"
+                android:hint="SNF %"
+                android:inputType="numberDecimal"
+                android:paddingHorizontal="10dp"
+                android:textSize="11sp"/>
+
+        </LinearLayout>
+
+        <!-- ================================================= -->
+        <!-- RATE + TOTAL -->
+        <!-- ================================================= -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/etRate"
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:background="@drawable/bg_edittext"
+                android:hint="Rate"
+                android:paddingHorizontal="10dp"
+                android:textSize="11sp"/>
+
+            <EditText
+                android:id="@+id/etTotal"
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:enabled="false"
+                android:background="@drawable/bg_edittext"
+                android:hint="Total"
+                android:paddingHorizontal="10dp"
+                android:textSize="11sp"/>
+
+        </LinearLayout>
+
+        <!-- ================================================= -->
+        <!-- REMARK -->
+        <!-- ================================================= -->
+
+        <EditText
+            android:id="@+id/etRemarks"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/bg_edittext"
+            android:gravity="top"
+            android:hint="Additional remarks..."
+            android:padding="12dp"
+            android:textSize="11sp"/>
+
+        <!-- ================================================= -->
+        <!-- SAVE -->
+        <!-- ================================================= -->
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="10dp"
+            android:text="Save Collection"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:backgroundTint="#14B8A6"
+            app:cornerRadius="16dp"
+            app:elevation="0dp"/>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

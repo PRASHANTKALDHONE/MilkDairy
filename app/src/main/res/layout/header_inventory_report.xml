@@ -1,0 +1,9 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content" android:layout_height="44dp"  android:orientation="horizontal">
+    <TextView android:layout_width="160dp" android:text="ITEM" android:textStyle="bold" android:textColor="?android:textColorPrimary" android:layout_height="wrap_content"/>
+    <TextView android:layout_width="130dp" android:text="CATEGORY" android:textStyle="bold" android:textColor="?android:textColorPrimary" android:layout_height="wrap_content"/>
+    <TextView android:layout_width="100dp" android:text="IN" android:textStyle="bold" android:textColor="?android:textColorPrimary" android:layout_height="wrap_content"/>
+    <TextView android:layout_width="100dp" android:text="OUT" android:textStyle="bold" android:textColor="?android:textColorPrimary" android:layout_height="wrap_content"/>
+    <TextView android:layout_width="130dp" android:text="CURRENT" android:textStyle="bold" android:textColor="?android:textColorPrimary" android:layout_height="wrap_content"/>
+    <TextView android:layout_width="80dp" android:text="UNIT" android:textStyle="bold" android:textColor="?android:textColorPrimary" android:layout_height="wrap_content"/>
+    <TextView android:layout_width="130dp" android:text="VALUE" android:textStyle="bold" android:textColor="?android:textColorPrimary" android:layout_height="wrap_content"/>
+</LinearLayout>

@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="120dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="6dp">
+
+    <FrameLayout
+        android:id="@+id/tankContainer"
+        android:layout_width="70dp"
+        android:layout_height="150dp"
+        android:background="@drawable/bg_milk_tank">
+
+        <!-- Milk Fill -->
+        <View
+            android:id="@+id/milkFill"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/bg_milk_fill"/>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tvLiters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 L"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="?android:textColorPrimary"
+        android:layout_marginTop="6dp"/>
+
+    <TextView
+        android:id="@+id/tvRatio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 / 40L"
+        android:textSize="13sp"
+        android:textColor="?android:textColorSecondary"/>
+
+</LinearLayout>

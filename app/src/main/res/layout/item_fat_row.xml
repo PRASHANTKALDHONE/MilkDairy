@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:layout_marginBottom="3dp"
+    android:background="@drawable/bg_rule_row"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingStart="7dp"
+    android:paddingEnd="7dp">
+
+    <EditText
+        android:id="@+id/etFatFrom"
+        android:layout_width="36dp"
+        android:layout_height="24dp"
+        android:background="@drawable/bg_edittext_small"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:inputType="numberDecimal"
+        android:padding="0dp"
+        android:text="3.0"
+        android:textColor="#1A1A2E"
+        android:textSize="9sp" />
+
+    <TextView
+        android:layout_width="14dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="-"
+        android:textColor="#8E9AAF"
+        android:textSize="10sp" />
+
+    <EditText
+        android:id="@+id/etFatTo"
+        android:layout_width="36dp"
+        android:layout_height="24dp"
+        android:background="@drawable/bg_edittext_small"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:inputType="numberDecimal"
+        android:padding="0dp"
+        android:text="4.0"
+        android:textColor="#1A1A2E"
+        android:textSize="9sp" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:includeFontPadding="false"
+        android:text=" %"
+        android:textColor="#8E9AAF"
+        android:textSize="9sp" />
+
+    <TextView
+        android:id="@+id/tvFatDiffDisplay"
+        android:layout_width="44dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:gravity="end"
+        android:includeFontPadding="false"
+        android:text="+0.40"
+        android:textColor="#009640"
+        android:textSize="10sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etFatDiff"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:inputType="numberDecimal"
+        android:text="0.40"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/btnDeleteFat"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="3dp"
+        android:padding="3dp"
+        android:src="@drawable/ic_more_vert" />
+
+</LinearLayout>

@@ -1,0 +1,28 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Tank Border -->
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="20dp"/>
+            <stroke
+                android:width="2dp"
+                android:color="#8A8A8A"/>
+            <solid android:color="#FFFFFF"/>
+        </shape>
+    </item>
+
+    <!-- Milk Level -->
+    <item android:id="@android:id/progress">
+        <scale
+            android:scaleGravity="bottom"
+            android:useLevel="true">
+
+            <shape android:shape="rectangle">
+                <corners android:radius="20dp"/>
+                <solid android:color="#E46F4E"/>
+            </shape>
+
+        </scale>
+    </item>
+
+</layer-list>

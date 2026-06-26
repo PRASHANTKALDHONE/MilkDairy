@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "50362537640",
+    "project_id": "milk-dairy-dfe97",
+    "storage_bucket": "milk-dairy-dfe97.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:50362537640:android:ef9e57e2685097a3c1149d",
+        "android_client_info": {
+          "package_name": "com.prashant.milkdairy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLQDT_t7U6SwWsLXVY7g-LNARxHow4D2s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

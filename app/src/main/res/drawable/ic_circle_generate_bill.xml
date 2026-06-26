@@ -1,0 +1,18 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#9C27B0"/>
+            <size android:width="52dp" android:height="52dp"/>
+        </shape>
+    </item>
+    <item android:top="11dp" android:bottom="11dp" android:left="13dp" android:right="13dp">
+        <vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="26dp" android:height="26dp" android:viewportWidth="24" android:viewportHeight="24">
+            <path android:fillColor="#FFFFFF" android:pathData="M14,2 H6 C4.9,2 4,2.9 4,4 V20 C4,21.1 4.9,22 6,22 H18 C19.1,22 20,21.1 20,20 V8 Z"/>
+            <path android:fillColor="#E1BEE7" android:pathData="M14,2 L20,8 H14 Z"/>
+            <!--  Lines on document  -->
+            <path android:strokeColor="#9C27B0" android:strokeWidth="1.5" android:pathData="M8,12 H16"/>
+            <path android:strokeColor="#9C27B0" android:strokeWidth="1.5" android:pathData="M8,15 H16"/>
+            <path android:strokeColor="#9C27B0" android:strokeWidth="1.5" android:pathData="M8,18 H13"/>
+        </vector>
+    </item>
+</layer-list>

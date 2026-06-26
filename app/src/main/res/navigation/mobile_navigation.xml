@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+
+    <!-- DASHBOARD -->
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.prashant.milkdairy.ui.Dashboard.DashboardFragment"
+        android:label="Dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+
+    <!-- FARMER -->
+    <fragment
+        android:id="@+id/nav_farmer"
+        android:name="com.prashant.milkdairy.ui.Farmer_Management.FarmerFragment"
+        android:label="Farmer Management"
+        tools:layout="@layout/fragment_farmer" />
+
+    <fragment
+        android:id="@+id/nav_add_farmer"
+        android:name="com.prashant.milkdairy.ui.Farmer_Management.AddFarmerFragment"
+        android:label="Add Farmer"
+        tools:layout="@layout/fragment_add_farmer" />
+
+
+
+
+    <!-- MILK COLLECTION -->
+    <fragment
+        android:id="@+id/nav_milkCollection"
+        android:name="com.prashant.milkdairy.ui.Milk_Collection.MilkCollectionFragment"
+        android:label="Milk Collection"
+        tools:layout="@layout/fragment_milk_collection"/>
+
+    <fragment
+        android:id="@+id/nav_advance_food"
+        android:name="com.prashant.milkdairy.ui.Advance_Food_Medical.AdvanceFoodFragment"
+        android:label="Advance / Food"
+        tools:layout="@layout/fragment_advance_food">
+
+        <action
+            android:id="@+id/action_nav_advance_food_to_addDeductionFragment"
+            app:destination="@id/addDeductionFragment"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/addDeductionFragment"
+        android:name="com.prashant.milkdairy.ui.Advance_Food_Medical.AddDeductionFragment"
+        android:label="Add Deduction"
+        tools:layout="@layout/fragment_add_deduction"/>
+
+
+    <!-- BILLS -->
+    <fragment
+        android:id="@+id/nav_bills"
+        android:name="com.prashant.milkdairy.ui.Generate_Bills.BillsFragment"
+        android:label="Bills"
+        tools:layout="@layout/fragment_bills" />
+
+    <fragment
+        android:id="@+id/nav_bonus_management"
+        android:name="com.prashant.milkdairy.ui.Bonus_Management.BonusManagementFragment"
+        android:label="Bonus Management"
+        tools:layout="@layout/fragment_bonus_management" />
+
+    <fragment
+        android:id="@+id/nav_rate_chart"
+        android:name="com.prashant.milkdairy.ui.Rate_Chart.RateChartFragment"
+        android:label="Rate Chart"
+        tools:layout="@layout/fragment_rate_chart" />
+
+    <!-- INVENTORY -->
+    <fragment
+        android:id="@+id/nav_inventory"
+        android:name="com.prashant.milkdairy.ui.Inventory.InventoryFragment"
+        android:label="Inventory"
+        tools:layout="@layout/fragment_inventory">
+
+        <action
+            android:id="@+id/action_nav_inventory_to_add_inventory_item"
+            app:destination="@id/nav_add_inventory_item"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_add_inventory_item"
+        android:name="com.prashant.milkdairy.ui.Inventory.Add_Inventory_Item"
+        android:label="Add Inventory Item"
+        tools:layout="@layout/fragment_add__inventory__item"/>
+
+
+    <!-- REPORTS -->
+    <fragment
+        android:id="@+id/nav_reports"
+        android:name="com.prashant.milkdairy.ui.Reports.ReportsFragment"
+        android:label="Reports"
+        tools:layout="@layout/fragment_reports" />
+
+
+
+</navigation>

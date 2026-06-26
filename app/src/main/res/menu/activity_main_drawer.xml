@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:title="Dashboard"
+            android:icon="@drawable/dashboard"/>
+
+        <item
+            android:id="@+id/nav_farmer"
+            android:title="Farmer Management"
+            android:icon="@drawable/farmer"/>
+
+        <item
+            android:id="@+id/nav_milkCollection"
+            android:title="Milk Collection"
+            android:icon="@drawable/milkcan"/>
+
+        <item
+            android:id="@+id/nav_advance_food"
+            android:title="Advance / Food"
+            android:icon="@drawable/advancedsearch"/>
+
+        <item
+            android:id="@+id/nav_bills"
+            android:title="Generate Bills"
+            android:icon="@drawable/bill"/>
+        <item
+            android:id="@+id/nav_bonus_management"
+            android:title="Bonus Mangemnet"
+            android:icon="@drawable/bonus"/>
+        <item
+            android:id="@+id/nav_rate_chart"
+            android:title="Rate_chart"
+            android:icon="@drawable/marketgrowth"/>
+
+        <item
+            android:id="@+id/nav_inventory"
+            android:title="Inventory"
+            android:icon="@drawable/productmanagement"/>
+
+        <item
+            android:id="@+id/nav_reports"
+            android:title="Reports"
+            android:icon="@drawable/report"/>
+
+    </group>
+</menu>

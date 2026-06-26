@@ -1,0 +1,13 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#FEF3E2"/>
+            <size android:width="32dp" android:height="32dp"/>
+        </shape>
+    </item>
+    <item android:top="8dp" android:bottom="8dp" android:left="8dp" android:right="8dp">
+        <vector android:width="16dp" android:height="16dp" android:viewportWidth="24" android:viewportHeight="24">
+            <path android:fillColor="#E67E22" android:pathData="M3,3H10V10H3V3zM14,3H21V10H14V3zM3,14H10V21H3V14zM14,14H21V21H14V14z"/>
+        </vector>
+    </item>
+</layer-list>

@@ -1,0 +1,20 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#4CAF50"/>
+            <size android:width="52dp" android:height="52dp"/>
+        </shape>
+    </item>
+    <item android:top="11dp" android:bottom="11dp" android:left="13dp" android:right="13dp">
+        <vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="28dp" android:height="28dp" android:viewportWidth="24" android:viewportHeight="24">
+            <!--  Milk jar body  -->
+            <path android:fillColor="#FFFFFF" android:pathData="M7,5 H17 L18,8 V21 Q18,22 17,22 H7 Q6,22 6,21 V8 Z"/>
+            <!--  Lid  -->
+            <path android:fillColor="#C8E6C9" android:pathData="M6,5 H18 V7 H6 Z"/>
+            <!--  Handle  -->
+            <path android:fillColor="#C8E6C9" android:pathData="M9,2 H15 V5 H9 Z"/>
+            <!--  Liquid line  -->
+            <path android:fillColor="#A5D6A7" android:pathData="M8,16 H16 V21 Q16,22 15,22 H9 Q8,22 8,21 Z"/>
+        </vector>
+    </item>
+</layer-list>

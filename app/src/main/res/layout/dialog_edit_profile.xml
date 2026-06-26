@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="?attr/colorSurface">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="20dp"
+        android:paddingEnd="14dp"
+        android:background="?attr/colorPrimary">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Edit Profile"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/btnCloseProfileDialog"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:padding="5dp"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            app:tint="@android:color/white" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="22dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imgEditProfile"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="centerCrop"
+                android:src="@drawable/applogo"
+                app:shapeAppearanceOverlay="@style/CircleImageStyle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:text="Tap image to change photo"
+                android:textColor="?android:textColorSecondary"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tvEditEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="Email: -"
+                android:textColor="?android:textColorSecondary"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="Full Name *"
+                android:textColor="?android:textColorPrimary"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etEditFullName"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/bg_edittext"
+                android:hint="Enter full name"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:textColor="?android:textColorPrimary"
+                android:textColorHint="?android:textColorSecondary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Mobile Number *"
+                android:textColor="?android:textColorPrimary"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etEditMobile"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/bg_edittext"
+                android:hint="Enter 10 digit mobile number"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:textColor="?android:textColorPrimary"
+                android:textColorHint="?android:textColorSecondary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Dairy Name *"
+                android:textColor="?android:textColorPrimary"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etEditDairyName"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/bg_edittext"
+                android:hint="Enter dairy name"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:textColor="?android:textColorPrimary"
+                android:textColorHint="?android:textColorSecondary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Address *"
+                android:textColor="?android:textColorPrimary"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etEditAddress"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/bg_edittext"
+                android:gravity="top"
+                android:hint="Enter address"
+                android:padding="14dp"
+                android:textColor="?android:textColorPrimary"
+                android:textColorHint="?android:textColorSecondary" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:background="?attr/colorSurface">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCancelProfileEdit"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            android:textColor="?android:textColorPrimary"
+            app:backgroundTint="?attr/colorSurface"
+            app:strokeColor="?android:textColorSecondary"
+            app:strokeWidth="1dp"
+            app:cornerRadius="12dp" />
+
+        <Space
+            android:layout_width="12dp"
+            android:layout_height="wrap_content" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSaveProfileEdit"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="Save"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            app:cornerRadius="12dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

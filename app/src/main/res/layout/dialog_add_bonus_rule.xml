@@ -1,0 +1,279 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="?attr/colorSurface">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#26A69A"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="16dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Add Bonus Rule"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/btnClose"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            app:tint="@android:color/white" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Rule Name Label -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rule Name *"
+                android:textSize="14sp"
+                android:textColor="?android:textColorPrimary"
+                android:textStyle="bold" />
+
+            <!-- Rule Name EditText -->
+            <EditText
+                android:id="@+id/etRuleName"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_input"
+                android:paddingHorizontal="12dp"
+                android:textSize="14sp"
+                android:textColor="?android:textColorPrimary"
+                android:textColorHint="?android:textColorSecondary" />
+
+            <!-- Rule Type -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rule Type"
+                android:textSize="14sp"
+                android:textColor="?android:textColorPrimary"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp" />
+
+            <!-- Rule Buttons -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnPercentage"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="4dp"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    android:maxLines="2"
+                    android:text="Percent&#10;(%)"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textSize="9sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="?attr/colorSurface"
+                    app:cornerRadius="14dp"
+                    app:elevation="3dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnFixed"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    android:maxLines="2"
+                    android:text="Fixed&#10;(₹)"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textSize="9sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="?attr/colorSurface"
+                    app:cornerRadius="14dp"
+                    app:elevation="3dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnPerAmount"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    android:maxLines="2"
+                    android:text="₹ Per&#10;Amount"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textSize="9sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="?attr/colorSurface"
+                    app:cornerRadius="14dp"
+                    app:elevation="3dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnPerLiter"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="4dp"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    android:maxLines="2"
+                    android:text="₹ Per&#10;Liter"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textSize="9sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="?attr/colorSurface"
+                    app:cornerRadius="14dp"
+                    app:elevation="3dp" />
+
+            </LinearLayout>            <!-- Value Label -->
+            <TextView
+                android:id="@+id/tvValueLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Value (%) *"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="?android:textColorPrimary"
+                android:layout_marginTop="20dp" />
+
+            <!-- Value EditText -->
+            <EditText
+                android:id="@+id/etValue"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_input"
+                android:paddingHorizontal="12dp"
+                android:textColor="?android:textColorPrimary"
+                android:textColorHint="?android:textColorSecondary" />
+
+            <!-- Per Amount Label -->
+            <TextView
+                android:id="@+id/tvPerAmountLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Per Amount (₹) *"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="?android:textColorPrimary"
+                android:layout_marginTop="16dp"
+                android:visibility="gone" />
+
+            <!-- Per Amount EditText -->
+            <EditText
+                android:id="@+id/etPerAmount"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_input"
+                android:paddingHorizontal="12dp"
+                android:textColor="?android:textColorPrimary"
+                android:textColorHint="?android:textColorSecondary"
+                android:visibility="gone" />
+
+            <!-- Description Label -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description (optional)"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="?android:textColorPrimary"
+                android:layout_marginTop="20dp" />
+
+            <!-- Description EditText -->
+            <EditText
+                android:id="@+id/etDescription"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_input"
+                android:gravity="top"
+                android:padding="12dp"
+                android:hint="Any notes about this rule..."
+                android:textColor="?android:textColorPrimary"
+                android:textColorHint="?android:textColorSecondary" />
+
+            <!-- Active -->
+            <CheckBox
+                android:id="@+id/cbActive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rule is active"
+                android:textColor="?android:textColorPrimary"
+                android:checked="true"
+                android:layout_marginTop="16dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Bottom Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:gravity="end|center_vertical"
+        android:paddingHorizontal="16dp"
+        android:background="?attr/colorSurface">
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="100dp"
+            android:layout_height="44dp"
+            android:text="Cancel"
+            android:background="@drawable/bg_rule_unselected" />
+
+        <Button
+            android:id="@+id/btnAddRule"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:minWidth="140dp"
+            android:layout_marginStart="12dp"
+            android:text="Add Rule"
+            android:textColor="@android:color/white"
+            android:background="@drawable/bg_selected"/>
+    </LinearLayout>
+
+</LinearLayout>

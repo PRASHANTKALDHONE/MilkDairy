@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:colorBackground">
+
+    <!-- Scroll -->
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <!-- Back Button -->
+            <TextView
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="← Back"
+                android:textSize="16sp"
+                android:textColor="?android:textColorPrimary"
+                android:padding="8dp"
+                android:background="@drawable/bg_button_outline"/>
+
+
+            <!-- Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add New Farmer"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="?android:textColorPrimary"
+                android:layout_marginTop="8dp"/>
+
+
+            <!-- Subtitle -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Register a new farmer in the dairy system."
+                android:textSize="14sp"
+                android:textColor="?android:textColorSecondary"
+                android:layout_marginBottom="18dp"/>
+
+
+            <!-- Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp"
+                app:cardBackgroundColor="?attr/colorSurface">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="18dp">
+
+
+                    <!-- Basic Info -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Basic Information"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="?android:textColorPrimary"
+                        android:layout_marginBottom="12dp"/>
+
+
+                    <!-- Farmer Name Label -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Farmer Name *"
+                        android:textColor="?android:textColorPrimary"/>
+
+
+                    <!-- Farmer Name Input -->
+                    <EditText
+                        android:id="@+id/etFarmerName"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:background="@drawable/bg_edittext"
+                        android:hint="Enter farmer name"
+                        android:padding="10dp"
+                        android:layout_marginBottom="12dp"
+                        android:textColor="?android:textColorPrimary"
+                        android:textColorHint="?android:textColorSecondary"/>
+
+
+                    <!-- Mobile Label -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mobile *"
+                        android:textColor="?android:textColorPrimary"/>
+
+
+                    <!-- Mobile Input -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/bg_edittext"
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:layout_marginBottom="14dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="+91"
+                            android:textSize="16sp"
+                            android:textColor="?android:textColorPrimary"/>
+
+                        <EditText
+                            android:id="@+id/etMobile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="10-digit mobile number"
+                            android:inputType="number"
+                            android:background="@null"
+                            android:paddingStart="10dp"
+                            android:textColor="?android:textColorPrimary"
+                            android:textColorHint="?android:textColorSecondary"/>
+                    </LinearLayout>
+
+
+                    <!-- Milk Type Label -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Milk Type *"
+                        android:textColor="?android:textColorPrimary"
+                        android:layout_marginBottom="8dp"/>
+
+
+                    <!-- Milk Type Buttons -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnCow"
+                            android:layout_width="0dp"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:text="Cow"
+                            android:textAllCaps="false"
+                            android:backgroundTint="#2E8B7D"
+                            android:textColor="@android:color/white" />
+
+                        <Space
+                            android:layout_width="8dp"
+                            android:layout_height="match_parent" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnBuffalo"
+                            android:layout_width="0dp"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:text="Buffalo"
+                            android:textAllCaps="false"
+                            android:backgroundTint="?attr/colorSurface"
+                            android:textColor="?android:textColorPrimary" />
+
+                        <Space
+                            android:layout_width="8dp"
+                            android:layout_height="match_parent" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnMix"
+                            android:layout_width="0dp"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:text="Mix"
+                            android:textAllCaps="false"
+                            android:backgroundTint="?attr/colorSurface"
+                            android:textColor="?android:textColorPrimary" />
+
+                    </LinearLayout>
+
+
+
+                    <!-- Address Label -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Address (optional)"
+                        android:textColor="?android:textColorPrimary"
+                        android:layout_marginTop="14dp"/>
+
+
+                    <!-- Address Input -->
+                    <EditText
+                        android:id="@+id/etAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:hint="Village / Area / Landmark"
+                        android:background="@drawable/bg_edittext"
+                        android:padding="10dp"
+                        android:gravity="top"
+                        android:textColor="?android:textColorPrimary"
+                        android:textColorHint="?android:textColorSecondary"/>
+
+
+                    <!-- Bottom Buttons -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:gravity="end"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnCancel"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Cancel"
+                            android:textAllCaps="false"
+                            android:textSize="12sp"
+                            android:backgroundTint="?attr/colorSurface"
+                            android:textColor="?android:textColorPrimary"/>
+
+                        <Space
+                            android:layout_width="6dp"
+                            android:layout_height="match_parent"/>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnReset"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Reset"
+                            android:textAllCaps="false"
+                            android:textSize="12sp"
+                            android:backgroundTint="?attr/colorSurface"
+                            android:textColor="?android:textColorPrimary"/>
+
+                        <Space
+                            android:layout_width="6dp"
+                            android:layout_height="match_parent"/>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnSave"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Save"
+                            android:textAllCaps="false"
+                            android:textSize="12sp"
+                            android:backgroundTint="?attr/colorSurface"
+                            android:textColor="?android:textColorPrimary"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

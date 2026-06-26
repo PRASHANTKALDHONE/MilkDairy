@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:minHeight="50dp"
+    android:layout_marginEnd="6dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="5dp"
+    android:background="@drawable/bg_stat_glass">
+
+    <!-- VALUE -->
+
+    <TextView
+        android:id="@+id/tvDashnum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:includeFontPadding="false"
+        android:text="₹3000"
+        android:textColor="@android:color/white"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <!-- TITLE -->
+
+    <TextView
+        android:id="@+id/tvdashtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:text="STOCK VALUE"
+        android:textColor="#DDE7FF"
+        android:textSize="10sp"
+        android:textStyle="bold"/>
+
+</LinearLayout>

@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="6dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="3dp"
+    app:cardBackgroundColor="?attr/colorSurface"
+    app:cardCornerRadius="18dp"
+    app:cardElevation="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- TOP STRIP -->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#10B26C"/>
+
+        <!-- MAIN CONTENT -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <!-- TOP SECTION -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <!-- AVATAR -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:cardBackgroundColor="?attr/colorSurface"
+                    app:cardCornerRadius="25dp"
+                    app:cardElevation="1dp">
+
+                    <TextView
+                        android:id="@+id/tvAvatar"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="SK"
+                        android:textColor="#10B26C"
+                        android:textSize="16sp"
+                        android:textStyle="bold"/>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- INFO -->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="10dp"
+                    android:orientation="vertical">
+
+                    <!-- FARMER NAME -->
+
+                    <TextView
+                        android:id="@+id/tvFarmer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="Pradeep Kumar"
+                        android:textColor="?android:textColorPrimary"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+
+                    <!-- BILL NUMBER -->
+
+                    <TextView
+                        android:id="@+id/tvBillNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="#BILL-0043"
+                        android:textColor="?android:textColorSecondary"
+                        android:textSize="9sp"
+                        android:textStyle="bold"/>
+
+                    <!-- DATE -->
+
+                    <TextView
+                        android:id="@+id/tvPeriod"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:text="01 - 31 May 2025"
+                        android:textColor="?android:textColorSecondary"
+                        android:textSize="8sp"/>
+
+                </LinearLayout>
+
+                <!-- STATUS -->
+
+                <!-- STATUS + MENU -->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/layoutStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:background="@drawable/bg_status_pending"
+                        android:gravity="center"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp">
+
+                        <TextView
+                            android:id="@+id/tvStatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="PENDING"
+                            android:textColor="#D97706"
+                            android:textSize="8sp"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+                    <ImageButton
+                        android:id="@+id/btnMenu"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_marginStart="6dp"
+                        android:background="@android:color/transparent"
+                        android:padding="4dp"
+                        android:src="@drawable/more"
+                        android:scaleType="fitCenter"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                app:cardBackgroundColor="?attr/colorSurface"/>
+            <!-- AMOUNT SECTION -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <!-- MILK -->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="56dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="3dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MILK"
+                        android:textColor="?android:textColorPrimary"
+                        android:textSize="7sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/tvMilkAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="₹18,560"
+                        android:textColor="?android:textColorSecondary"
+                        android:textSize="11sp"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+                <!-- BONUS -->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="56dp"
+                    android:layout_weight="1"
+                    android:layout_marginHorizontal="3dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="BONUS"
+                        android:textColor="?android:textColorPrimary"
+                        android:textSize="7sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/tvBonus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="+₹620"
+                        android:textColor="?android:textColorSecondary"
+                        android:textSize="11sp"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+                <!-- DEDUCTION -->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="56dp"
+                    android:layout_weight="1"
+                    android:layout_marginHorizontal="3dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DEDUCT"
+                        android:textColor="?android:textColorPrimary"
+                        android:textSize="7sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/tvDeduction"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="-₹200"
+                        android:textColor="?android:textColorSecondary"
+                        android:textSize="11sp"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+                <!-- NET -->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="56dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="3dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="NET PAY"
+                        android:textColor="?android:textColorPrimary"
+                        android:textSize="7sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/tvNetPayable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="₹18,980"
+                        android:textColor="?android:textColorSecondary"
+                        android:textSize="12sp"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <!-- BUTTONS -->
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

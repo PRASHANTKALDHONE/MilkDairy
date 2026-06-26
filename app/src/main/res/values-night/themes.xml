@@ -1,0 +1,30 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Main dark theme.
+         NoActionBar is required because MainActivity uses setSupportActionBar(toolbar). -->
+    <style name="Theme.MilkDairy" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <item name="colorPrimary">@color/purple_200</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/black</item>
+
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        <item name="colorSurface">#121212</item>
+        <item name="colorOnSurface">#FFFFFF</item>
+
+        <item name="android:windowBackground">#121212</item>
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:navigationBarColor">#121212</item>
+
+        <item name="materialButtonStyle">@style/Widget.MilkDairy.Button</item>
+
+
+    </style>
+
+    <!-- Alias for screens that already use Theme.MilkDairy.NoActionBar -->
+    <style name="Theme.MilkDairy.NoActionBar" parent="Theme.MilkDairy" />
+
+</resources>

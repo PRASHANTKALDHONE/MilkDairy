@@ -1,0 +1,20 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#009688"/>
+            <size android:width="52dp" android:height="52dp"/>
+        </shape>
+    </item>
+    <item android:top="11dp" android:bottom="11dp" android:left="11dp" android:right="11dp">
+        <vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="30dp" android:height="30dp" android:viewportWidth="24" android:viewportHeight="24">
+            <!--  Bar 1 (short)  -->
+            <path android:fillColor="#FFFFFF" android:pathData="M4,18 H8 V14 H4 Z"/>
+            <!--  Bar 2 (medium)  -->
+            <path android:fillColor="#FFFFFF" android:pathData="M10,18 H14 V10 H10 Z"/>
+            <!--  Bar 3 (tall)  -->
+            <path android:fillColor="#FFFFFF" android:pathData="M16,18 H20 V6 H16 Z"/>
+            <!--  Bottom line  -->
+            <path android:strokeColor="#B2DFDB" android:strokeWidth="1.5" android:pathData="M3,19 H21"/>
+        </vector>
+    </item>
+</layer-list>

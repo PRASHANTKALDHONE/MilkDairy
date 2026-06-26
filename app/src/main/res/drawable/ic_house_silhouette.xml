@@ -1,0 +1,18 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="120dp" android:height="90dp" android:viewportWidth="120" android:viewportHeight="90">
+    <!--  Main house body  -->
+    <path android:fillColor="#FFFFFF" android:pathData="M15,90 L15,45 L60,10 L105,45 L105,90 Z"/>
+    <!--  Roof triangle  -->
+    <path android:fillColor="#FFFFFF" android:pathData="M5,50 L60,5 L115,50 Z"/>
+    <!--  Door  -->
+    <path android:fillColor="#1565C0" android:pathData="M45,90 L45,65 Q45,60 50,60 L70,60 Q75,60 75,65 L75,90 Z"/>
+    <!--  Left window  -->
+    <path android:fillColor="#1565C0" android:pathData="M20,55 H38 V70 H20 Z"/>
+    <!--  Right window  -->
+    <path android:fillColor="#1565C0" android:pathData="M82,55 H100 V70 H82 Z"/>
+    <!--  Chimney  -->
+    <path android:fillColor="#FFFFFF" android:pathData="M78,8 H90 L90,35 L78,28 Z"/>
+    <!--  Small tree left  -->
+    <path android:fillColor="#FFFFFF" android:pathData="M3,90 L3,70 L10,90 Z M3,90 L10,70 L10,90 Z"/>
+    <!--  Small tree right  -->
+    <path android:fillColor="#FFFFFF" android:pathData="M110,90 L110,70 L117,90 Z M110,90 L117,70 L117,90 Z"/>
+</vector>
